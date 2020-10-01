@@ -16,14 +16,13 @@ namespace MLX90615 {
         addr = MLX90615enum.MLX90615_I2C_ADDR;
     }
 
-    //% block
+    //% block = "read object temperature"
     export function readObj() : number {
         return read16(MLX90615enum.MLX90615_REG_TEMP_OBJECT) * 0.02 - 273.15; ;
     }
 
-    //% block
+    //% block= "read ambient temperature"
     export function readAbt() : number {
-
         return read16(MLX90615enum.MLX90615_REG_TEMP_AMBIENT) * 0.02 - 273.15;
     }
 
