@@ -8,7 +8,7 @@ enum MLX90615enum {
     MLX90615_REG_TEMP_OBJECT    = 	0x27
 }
 
-//% color="#AA278D"
+//% color="#AA278D" 234
 namespace MLX90615 {
     let addr: number; 
     //% block
