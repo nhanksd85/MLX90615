@@ -18,7 +18,7 @@ namespace MLX90615 {
 
     //% block = "read object temperature"
     export function readObj() : number {
-        return read16(MLX90615enum.MLX90615_REG_TEMP_OBJECT) * 0.02 - 273.15; ;
+        return read16(MLX90615enum.MLX90615_REG_TEMP_OBJECT) * 0.02 - 273.15;
     }
 
     //% block= "read ambient temperature"
